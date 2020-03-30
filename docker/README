@@ -1,0 +1,8 @@
+Place auth.json file here with GitHub token:
+```
+{
+    "github-oauth": {
+        "github.com": "place-token-here"
+    }
+}
+```
