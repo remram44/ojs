@@ -31,3 +31,7 @@ RUN npm install && \
 
 # Copy the rest of the files
 COPY . ./
+
+ENV SETTING_BASE_URL=http://pkp.sfu.ca/ojs
+
+CMD ["sh", "-c", "if [ ! -e config.inc.php ]; then ./config.sh; fi && apache2-foreground"]
